@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.AutoTapRunner73Test" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-28T18:15:05" hostname="a6185a90f770" time="0.04">
+  <properties/>
+  <testcase name="longSoakPreservesOrderAndHasBoundedQueue" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.035"/>
+  <testcase name="illegalTimingAndCoordinatesAreRejected" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.001"/>
+  <testcase name="pauseRetainsStartDelay" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="replayAfterLimitIsAnExplicitNewRun" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="twoTargetsRunInOrderAndLimitCountsWholeCycles" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="cancellationAndRejectionPauseWithoutAdvancing" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="pauseRetainsRemainingGap" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="fastestHasOneMillisecondHoldAndNoAddedGap" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.001"/>
+  <testcase name="noOverlappingGesturesEvenWhenIntervalIsZero" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="missingCallbackNeverBlindlyRetries" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="twentyTargetsHaveCompleteCoverage" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="guardPreventsEveryDispatchIncludingAfterBackgroundChange" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.001"/>
+  <testcase name="perPointOverridesAreAppliedAfterEachCompletion" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="delayedCallbacksCannotDoubleCount" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="stopInvalidatesLateCallbackAndQueuedTaps" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.0"/>
+  <testcase name="pendingCompletionWhilePausedCountsButNeverSchedulesNext" classname="com.pratik.imagetap.AutoTapRunner73Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

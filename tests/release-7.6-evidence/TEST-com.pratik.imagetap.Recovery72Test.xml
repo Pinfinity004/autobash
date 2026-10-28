@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.Recovery72Test" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-28T18:15:15" hostname="a6185a90f770" time="0.517">
+  <properties/>
+  <testcase name="repeatedConnectionDoesNotRestartRunningSession" classname="com.pratik.imagetap.Recovery72Test" time="0.053"/>
+  <testcase name="abruptLossRetainsCountLatchesPauseAndPosition" classname="com.pratik.imagetap.Recovery72Test" time="0.077"/>
+  <testcase name="corruptCheckpointRecoversPausedRatherThanAutoReplay" classname="com.pratik.imagetap.Recovery72Test" time="0.065"/>
+  <testcase name="unfinishedActionRecoversPausedAtSameStep" classname="com.pratik.imagetap.Recovery72Test" time="0.056"/>
+  <testcase name="stopCannotBeResurrectedAndExplicitRestartResetsCount" classname="com.pratik.imagetap.Recovery72Test" time="0.071"/>
+  <testcase name="timedServiceRecoveryUsesRunningPlanNotLaterEditedPlan" classname="com.pratik.imagetap.Recovery72Test" time="0.082"/>
+  <testcase name="timelineRecoveryRetainsStepAndDoesNotCountDowntime" classname="com.pratik.imagetap.Recovery72Test" time="0.018"/>
+  <testcase name="targetRefreshDoesNotRearmUnchangedTarget" classname="com.pratik.imagetap.Recovery72Test" time="0.057"/>
+  <testcase name="manualPauseFreezesRestoredTimeline" classname="com.pratik.imagetap.Recovery72Test" time="0.02"/>
+  <testcase name="generalTimersKeepIndependentRemainingIntervals" classname="com.pratik.imagetap.Recovery72Test" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

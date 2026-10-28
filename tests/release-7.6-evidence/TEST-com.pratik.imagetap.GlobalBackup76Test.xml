@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.GlobalBackup76Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-28T18:15:09" hostname="a6185a90f770" time="0.245">
+  <properties/>
+  <testcase name="interruptedRestoreRollsBackAndDisablesActions" classname="com.pratik.imagetap.GlobalBackup76Test" time="0.062"/>
+  <testcase name="exportExcludesLiveSessionAndDeviceApp" classname="com.pratik.imagetap.GlobalBackup76Test" time="0.02"/>
+  <testcase name="everyActionAndSlotRoundTripsWithSettingsAndLayouts" classname="com.pratik.imagetap.GlobalBackup76Test" time="0.135"/>
+  <testcase name="incompleteBackupDoesNotChangeExistingCollections" classname="com.pratik.imagetap.GlobalBackup76Test" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

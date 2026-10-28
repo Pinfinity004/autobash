@@ -2,7 +2,7 @@
 
 ## Where this tree came from
 
-This repository is the contents of **`AutoBash_7.5_Source.zip`**, the source artifact
+This repository is the contents of **`AutoBash_7.6_Source.zip`**, the source artifact
 produced by the original build session and downloaded from its file library on
 2026-10-27. It is byte-for-byte that archive — not a reconstruction.
 
@@ -14,12 +14,12 @@ Archive integrity at import:
 
 | | |
 |---|---|
-| Entries | 338 |
-| Uncompressed | 5,063,071 bytes |
-| Java sources | 93 |
-| Resource XML | 168 |
+| Entries | 371 |
+| Uncompressed | 5,525,652 bytes |
+| Java sources | 97 |
+| Resource XML | 189 |
 | Gradle wrapper jar | present (43,583 bytes) |
-| Version notes | `AUTOBASH_6.5.md` … `AUTOBASH_7.5.md`, plus `TAP_FIX_6.4.1.md` |
+| Version notes | `AUTOBASH_6.5.md` … `AUTOBASH_7.6.md`, plus `TAP_FIX_6.4.1.md` |
 
 ## Verified from the archive itself
 
@@ -27,12 +27,12 @@ Archive integrity at import:
 |---|---|
 | `applicationId` | `com.pratik.imagetap.v7` |
 | `namespace` | `com.pratik.imagetap` |
-| `versionName` | `7.5` |
-| `versionCode` | `25` |
+| `versionName` | `7.6` |
+| `versionCode` | `26` |
 | minSdk / target / compile | 30 / 35 / 35 |
 | Android Gradle Plugin | 8.9.2 |
 | OpenCV | `org.opencv:opencv:4.12.0` |
-| Tests (as reported in `USABILITY_7.5.md`) | 160 passed |
+| Tests (as reported in `USABILITY_7.6.md`) | 168 passed |
 
 Note that `applicationId` (`…v7`) differs from `namespace` (`…imagetap`). That is
 intentional in the archive and is why the app can install alongside older builds.
@@ -58,7 +58,7 @@ Four changes, all outside the app source:
 
 ## Known limitations, from the archive's own notes
 
-`USABILITY_7.5.md` states: *"Automated checks do not replace testing on your phone. Final
+`USABILITY_7.6.md` states: *"Automated checks do not replace testing on your phone. Final
 automated result: 155 tests passed. Build and lint completed; no physical-device test
 performed."* `VALIDATION.md` records the same caveat for earlier releases — physical-phone
 file-provider and capture behaviour was never verified.

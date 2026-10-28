@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.TapDeliveryTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-28T18:15:17" hostname="a6185a90f770" time="0.707">
+  <properties/>
+  <testcase name="alreadyTappedTargetDoesNotResetAnotherConfirmation" classname="com.pratik.imagetap.TapDeliveryTest" time="0.047"/>
+  <testcase name="pauseRecordsCompletedGestureWithoutStartingAnother" classname="com.pratik.imagetap.TapDeliveryTest" time="0.052"/>
+  <testcase name="freshCheckDoesNotWaitForTenSecondPulse" classname="com.pratik.imagetap.TapDeliveryTest" time="0.042"/>
+  <testcase name="changedSimilarityInvalidatesOldDiscovery" classname="com.pratik.imagetap.TapDeliveryTest" time="0.046"/>
+  <testcase name="pauseDiscardsQueuedFreshVerification" classname="com.pratik.imagetap.TapDeliveryTest" time="0.047"/>
+  <testcase name="staticContentCanActOnDistinctFreshFrames" classname="com.pratik.imagetap.TapDeliveryTest" time="0.044"/>
+  <testcase name="stopDiscardsQueuedFreshVerification" classname="com.pratik.imagetap.TapDeliveryTest" time="0.047"/>
+  <testcase name="onlyOneAcceptedGesturePerFrame" classname="com.pratik.imagetap.TapDeliveryTest" time="0.042"/>
+  <testcase name="previewAndStaleFramesNeverDispatch" classname="com.pratik.imagetap.TapDeliveryTest" time="0.042"/>
+  <testcase name="detectionDispatches100msAndCompletionReportsAndroidOnly" classname="com.pratik.imagetap.TapDeliveryTest" time="0.038"/>
+  <testcase name="cancelledAndRejectedGesturesCanRetry" classname="com.pratik.imagetap.TapDeliveryTest" time="0.045"/>
+  <testcase name="sameFrameCannotConfirmItself" classname="com.pratik.imagetap.TapDeliveryTest" time="0.053"/>
+  <testcase name="durationClampsAndExceptionsDoNotLatchPending" classname="com.pratik.imagetap.TapDeliveryTest" time="0.057"/>
+  <testcase name="slowDiscoveryQueuesFreshVerificationInsteadOfDiscardingIt" classname="com.pratik.imagetap.TapDeliveryTest" time="0.048"/>
+  <testcase name="competingTargetsConfirmIndependentlyAcrossDistinctFrames" classname="com.pratik.imagetap.TapDeliveryTest" time="0.054"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

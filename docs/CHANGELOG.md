@@ -4,6 +4,23 @@ Reconstructed from the build transcript of the original ChatGPT session
 (2026-10-22 → 2026-10-28). Early versions were not individually tagged, so the
 0.x/ImageTap rows are grouped.
 
+## AutoBash 7.6 — 2026-10-28
+
+- Floating controls rebuilt: dedicated Pause/Stop row, separate full-width Quick save,
+  15 sp labels on 52 dp buttons, and reserved space for status and statistics so the panel
+  no longer jumps as text changes.
+- Auto Tap keeps Play/Pause and Stop above secondary controls; visibility, count, speed and
+  layouts use a consistent two-column layout, and secondary controls scroll on short displays.
+- One help entry per form. Auto Tap dialogs and the crop editor gain help; the duplicate
+  guide buttons are gone. Number selection shows an explicit readable count.
+- 180 ms fade for content transitions; dialogs and action buttons do not slide while in use.
+- **Export everything**: whole-setup backup covering all 7 actions × 3 preset slots, target
+  images and options, names/order, active slots, regions, timed actions, timelines, Auto Tap
+  plan and saved layouts, plus portable recognition and appearance settings. Restore
+  validates, warns before replacing, and leaves actions **off**. An interrupted restore rolls
+  back from a persistent journal.
+- 168 automated Android/Robolectric tests; see `USABILITY_7.6.md`.
+
 ## AutoBash 7.5 — 2026-10-28
 
 - Home reorganised around three plain-language tasks plus an Android access/setup card that
