@@ -61,7 +61,7 @@ On-device. No account. No cloud. <b>No internet permission at all.</b>
 </p>
 
 <p align="center">
-<img src="docs/media/auto-tap.png" width="300" alt="AutoBash Auto Tap screen">
+<a href="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/auto-tap.png"><img src="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/auto-tap.png" width="320" alt="AutoBash Auto Tap screen"></a>
 </p>
 
 ---
@@ -112,9 +112,9 @@ position is a wrong tap, and wrong taps are worse than no taps.
 ## Screens
 
 <p align="center">
-<img src="docs/media/auto-tap-controls.png" width="230" alt="Auto Tap floating controls">
+<img src="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/auto-tap-controls.png" width="230" alt="Auto Tap floating controls">
 &nbsp;&nbsp;
-<img src="docs/media/auto-tap-landscape.png" width="360" alt="Auto Tap in landscape">
+<img src="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/auto-tap-landscape.png" width="360" alt="Auto Tap in landscape">
 </p>
 
 ## Install
