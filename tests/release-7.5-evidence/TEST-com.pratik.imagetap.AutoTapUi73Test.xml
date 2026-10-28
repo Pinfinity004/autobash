@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.AutoTapUi73Test" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-28T05:37:03" hostname="9647153ea11b" time="1.361">
+  <properties/>
+  <testcase name="fastestPresetClearsIndividualOverrides" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.203"/>
+  <testcase name="homeAndDrawerExposeDedicatedSection" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.23"/>
+  <testcase name="landscapeKeepsPlayStopAboveScrollableDetails" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.095"/>
+  <testcase name="numberPickerAppliesTwoTargets" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.166"/>
+  <testcase name="layoutsRetainCoordinatesTimingAndNames" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.02"/>
+  <testcase name="settingsChangedDuringPendingTapApplyAfterCompletion" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.078"/>
+  <testcase name="openingAutoTapStopsRecognitionAndOnlyOnePanelExists" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.075"/>
+  <testcase name="fastestUsesOneMillisecondAndRemovesTouchableMarkers" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.068"/>
+  <testcase name="testPadCountsActualReceivedTouches" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.047"/>
+  <testcase name="targetUnderMenuCannotTapControls" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.046"/>
+  <testcase name="recoveryRetainsProgressButAlwaysStartsPaused" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.07"/>
+  <testcase name="resizedControlsPreserveTargetsAndProgress" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.09"/>
+  <testcase name="stopRemovesControlsAndLateCallbackCannotRestart" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.071"/>
+  <testcase name="numberTwoCreatesTwoIndependentDraggableTargets" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.079"/>
+  <testcase name="invalidAndUnknownLayoutsDoNotSilentlyReplaceSavedData" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

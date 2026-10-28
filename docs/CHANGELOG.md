@@ -1,8 +1,20 @@
 # Changelog
 
 Reconstructed from the build transcript of the original ChatGPT session
-(2026-10-22 → 2026-10-27). Early versions were not individually tagged, so the
+(2026-10-22 → 2026-10-28). Early versions were not individually tagged, so the
 0.x/ImageTap rows are grouped.
+
+## AutoBash 7.5 — 2026-10-28
+
+- Home reorganised around three plain-language tasks plus an Android access/setup card that
+  leads into Practice.
+- `How to use this · ?` on every main tab. Guides advance one step at a time with Next, Back,
+  Close and a topic index; help never starts automation or enables Allow actions.
+- Contextual guides inside Settings groups, Auto Tap dialogs and the crop editor.
+- Advanced session controls collapsed by default so the main choices stay clear.
+- Usability review scored 9.1/10 provisionally — an internal heuristic walkthrough, not a
+  user study. See `USABILITY_7.5.md`.
+- 160 automated tests passed.
 
 ## AutoBash 7.4 — 2026-10-27
 

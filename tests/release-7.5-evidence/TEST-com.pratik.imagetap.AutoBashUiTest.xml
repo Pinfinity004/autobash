@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.AutoBashUiTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-28T05:36:55" hostname="9647153ea11b" time="7.106">
+  <properties/>
+  <testcase name="compactMenuTargetsRemainInsideBounds" classname="com.pratik.imagetap.AutoBashUiTest" time="5.119"/>
+  <testcase name="orbitPresetsAndBackWork" classname="com.pratik.imagetap.AutoBashUiTest" time="0.443"/>
+  <testcase name="fastSearchDefaultsOnAndCanBeCompared" classname="com.pratik.imagetap.AutoBashUiTest" time="0.468"/>
+  <testcase name="brainOpensMenuAndRoutesToImages" classname="com.pratik.imagetap.AutoBashUiTest" time="0.314"/>
+  <testcase name="nervesReactToTimeAndTouch" classname="com.pratik.imagetap.AutoBashUiTest" time="0.167"/>
+  <testcase name="expandedMenuSurvivesRotation" classname="com.pratik.imagetap.AutoBashUiTest" time="0.269"/>
+  <testcase name="reduceMotionStopsAmbientChange" classname="com.pratik.imagetap.AutoBashUiTest" time="0.123"/>
+  <testcase name="launcherBrainRenders" classname="com.pratik.imagetap.AutoBashUiTest" time="0.201"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

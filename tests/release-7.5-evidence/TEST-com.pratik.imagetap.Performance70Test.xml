@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.Performance70Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-28T05:37:09" hostname="9647153ea11b" time="2.319">
+  <properties/>
+  <testcase name="fastModeIsPersistentAndDefaultsBalanced" classname="com.pratik.imagetap.Performance70Test" time="2.268"/>
+  <testcase name="exactFileFingerprintReusesContentNotFilenames" classname="com.pratik.imagetap.Performance70Test" time="0.025"/>
+  <testcase name="workerCountsRemainBounded" classname="com.pratik.imagetap.Performance70Test" time="0.025"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

@@ -17,11 +17,11 @@ On-device. No account. No cloud. <b>No internet permission at all.</b>
 </p>
 
 <p align="center">
-<img alt="version" src="https://img.shields.io/badge/version-7.4-FFD166?style=flat-square">
+<img alt="version" src="https://img.shields.io/badge/version-7.5-FFD166?style=flat-square">
 <img alt="android" src="https://img.shields.io/badge/Android-11%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
 <img alt="java" src="https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
 <img alt="opencv" src="https://img.shields.io/badge/OpenCV-4.12.0-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
-<img alt="tests" src="https://img.shields.io/badge/tests-155%20passing-2ea44f?style=flat-square">
+<img alt="tests" src="https://img.shields.io/badge/tests-160%20passing-2ea44f?style=flat-square">
 <img alt="network" src="https://img.shields.io/badge/network-none-critical?style=flat-square">
 <img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
 </p>
@@ -56,6 +56,7 @@ candidate before anything is touched.
 | ⚡ **Parallel eyes** | The scan engine checks targets concurrently with Balanced/Fast modes and worker caches — a 51-target pass went from **4443 ms to 1625 ms** on the tiny-symbol benchmark. |
 | 🔄 **Nothing gets starved** | Fair rotating target order, so target #51 is not permanently checked last. |
 | 💾 **Survives death** | Session checkpoints keep your action count, timed-plan progress and floating controls across a process kill. |
+| 🧭 **Guided help** | Step-by-step guides with progress on every tab, which explain but never start automation on their own. |
 | 🤖 **Auto Tap** | Up to 20 numbered targets on a timer with play/pause, saved layouts and an on-device tap test — no image detection at all. |
 | 🎨 **Actually designed** | Cream-and-navy, a hand-drawn circuit brain, pulsing nerve background, resizable floating controls. |
 
@@ -87,8 +88,8 @@ position is a wrong tap, and wrong taps are worse than no taps.
 
 Grab the APK from **[Releases](https://github.com/Pinfinity004/autobash/releases)**.
 
-1. Install `AutoBash_7.4.apk` (allow install from unknown sources).
-2. Open AutoBash → **Settings → Accessibility** → enable **AutoBash recognition**.
+1. Install `AutoBash_7.5.apk` (allow install from unknown sources).
+2. Open AutoBash and follow the **Android access** card on Home → enable **AutoBash recognition**.
 3. Add a target: screenshot → crop the thing you want → confirm.
 4. Start a session. **Leave Tap on detection off for the first minute** and just watch the
    green candidate brackets to check it is looking at the right thing.
@@ -119,11 +120,11 @@ Releases, not in the tree.
 |---|---|
 | `applicationId` | `com.pratik.imagetap.v7` |
 | `namespace` | `com.pratik.imagetap` |
-| Version | `7.4` (code `24`) |
+| Version | `7.5` (code `25`) |
 | minSdk / target / compile | 30 / 35 / 35 |
 | Android Gradle Plugin | 8.9.2 |
 | Vision | `org.opencv:opencv:4.12.0` |
-| Tests | 155 passing |
+| Tests | 160 passing |
 
 ```
 app/src/main/java/com/pratik/imagetap/
@@ -142,16 +143,16 @@ app/src/main/java/com/pratik/imagetap/
 
 | | |
 |---|---|
-| [`docs/CHANGELOG.md`](docs/CHANGELOG.md) | Version history, 0.x → 7.4 |
+| [`docs/CHANGELOG.md`](docs/CHANGELOG.md) | Version history, 0.x → 7.5 |
 | [`docs/HISTORY.md`](docs/HISTORY.md) | Original release index |
-| [`AUTOBASH_7.4.md`](AUTOBASH_7.4.md) | Current release notes |
+| [`AUTOBASH_7.5.md`](AUTOBASH_7.5.md) | Current release notes |
 | [`VALIDATION.md`](VALIDATION.md) | Test and lint results per release |
 | [`REVIEW.md`](REVIEW.md) | A candid review of what works and what does not |
 | [`docs/RECOVERY_STATUS.md`](docs/RECOVERY_STATUS.md) | Provenance of this source tree |
 
 ## Honest limits
 
-- **No device testing was performed.** All 155 tests are automated (Robolectric + JVM +
+- **No device testing was performed.** All 160 tests are automated (Robolectric + JVM +
   native OpenCV). Real phones behave differently: OEM battery managers kill accessibility
   services, secure windows refuse screenshots, and gesture delivery is not guaranteed.
 - **A match is not an intention.** Finding a shape that looks like a skip button does not

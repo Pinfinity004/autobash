@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.Automation69Test" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-28T05:37:05" hostname="9647153ea11b" time="1.297">
+  <properties/>
+  <testcase name="timedPreviewEditorAndPauseNeverDispatch" classname="com.pratik.imagetap.Automation69Test" time="0.054"/>
+  <testcase name="completionWhilePausedStartsNextDelayOnResume" classname="com.pratik.imagetap.Automation69Test" time="0.019"/>
+  <testcase name="timedHomeUsesAndroidNavigation" classname="com.pratik.imagetap.Automation69Test" time="0.05"/>
+  <testcase name="pauseFreezesRemainingTime" classname="com.pratik.imagetap.Automation69Test" time="0.021"/>
+  <testcase name="illegalSwipeDirectionIsRejected" classname="com.pratik.imagetap.Automation69Test" time="0.017"/>
+  <testcase name="failedStepRetriesWithoutAdvancing" classname="com.pratik.imagetap.Automation69Test" time="0.017"/>
+  <testcase name="markerPickerSupportsDragSaveAndCancel" classname="com.pratik.imagetap.Automation69Test" time="0.069"/>
+  <testcase name="stopIgnoresLateTimedCompletion" classname="com.pratik.imagetap.Automation69Test" time="0.043"/>
+  <testcase name="repeatTimelineRestartsWithFirstDelay" classname="com.pratik.imagetap.Automation69Test" time="0.017"/>
+  <testcase name="generalEditorOffersMarkersAndInterval" classname="com.pratik.imagetap.Automation69Test" time="0.162"/>
+  <testcase name="quickSaveAsksDestinationBeforeCrop" classname="com.pratik.imagetap.Automation69Test" time="0.307"/>
+  <testcase name="rejectedTimedGestureDoesNotAdvance" classname="com.pratik.imagetap.Automation69Test" time="0.055"/>
+  <testcase name="savedModesRemainSeparateAndDisabledStepsAreFiltered" classname="com.pratik.imagetap.Automation69Test" time="0.029"/>
+  <testcase name="pauseDuringGestureAllowsCompletionButBlocksNextStep" classname="com.pratik.imagetap.Automation69Test" time="0.057"/>
+  <testcase name="waterfallWaitsAfterCompletion" classname="com.pratik.imagetap.Automation69Test" time="0.019"/>
+  <testcase name="timelineScreenShowsSequenceAndControls" classname="com.pratik.imagetap.Automation69Test" time="0.263"/>
+  <testcase name="timedTapRunsWithoutAnyImagesAndCompletesOnCallback" classname="com.pratik.imagetap.Automation69Test" time="0.051"/>
+  <testcase name="generalTimersNeverOverlapOrCatchUpInBursts" classname="com.pratik.imagetap.Automation69Test" time="0.018"/>
+  <testcase name="corruptOrInvalidDataDoesNotSilentlyDisappear" classname="com.pratik.imagetap.Automation69Test" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>
