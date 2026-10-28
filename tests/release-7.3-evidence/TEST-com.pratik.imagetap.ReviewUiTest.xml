@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.ReviewUiTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-27T17:42:26" hostname="d60ab561ea8b" time="0.8">
+  <properties/>
+  <testcase name="optionsDialogSavesAndRenders" classname="com.pratik.imagetap.ReviewUiTest" time="0.378"/>
+  <testcase name="invalidWidthRejected" classname="com.pratik.imagetap.ReviewUiTest" time="0.03"/>
+  <testcase name="corruptOptionsDisableTarget" classname="com.pratik.imagetap.ReviewUiTest" time="0.026"/>
+  <testcase name="failedImageWriteDoesNotLeavePartialTarget" classname="com.pratik.imagetap.ReviewUiTest" time="0.026"/>
+  <testcase name="optionsRoundTripAndActiveSubset" classname="com.pratik.imagetap.ReviewUiTest" time="0.031"/>
+  <testcase name="cropSurvivesActivityRecreation" classname="com.pratik.imagetap.ReviewUiTest" time="0.309"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,3 @@
+Open Store unrestricted: 60,112 score=93.70528364017362
+Open Store with top-right-only search: REJECTED
+Real close button: 635,79 score=100.0

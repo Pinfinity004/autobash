@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.PopupSize74Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-27T21:23:23" hostname="f178b906e8e6" time="0.102">
+  <properties/>
+  <testcase name="clampKeepsWindowInsideScreen" classname="com.pratik.imagetap.PopupSize74Test" time="0.022"/>
+  <testcase name="independentPreferencesAndDefault" classname="com.pratik.imagetap.PopupSize74Test" time="0.026"/>
+  <testcase name="scaleChangesMeasuredGeometryAndText" classname="com.pratik.imagetap.PopupSize74Test" time="0.025"/>
+  <testcase name="requestedLargeSizeFitsShortDisplay" classname="com.pratik.imagetap.PopupSize74Test" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

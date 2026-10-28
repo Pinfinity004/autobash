@@ -1,0 +1,10 @@
+package com.pratik.imagetap;
+import android.app.Activity;import android.os.*;import android.view.*;import android.widget.*;import java.util.Locale;
+/** Counts input events received by an actual Android view, separately from dispatch callbacks. */
+public class TapTestActivity extends Activity {
+ long taps,started;TextView counter;final Handler handler=new Handler(Looper.getMainLooper());
+ final Runnable refresh=new Runnable(){public void run(){long elapsed=started==0?0:SystemClock.uptimeMillis()-started;counter.setText(String.format(Locale.US,"%d taps received\n%.1f taps/s since first tap",taps,elapsed<=0?0:taps*1000.0/elapsed));handler.postDelayed(this,250);}};
+ @Override public void onCreate(Bundle state){super.onCreate(state);Ui.window(this);LinearLayout root=Ui.column(this);root.setPadding(Ui.dp(this,20),Ui.dp(this,20),Ui.dp(this,20),Ui.dp(this,20));root.setBackgroundColor(Ui.BG);setContentView(root);AutoTapUi.add(root,Ui.label(this,"Tap test",28,Ui.CREAM));AutoTapUi.add(root,Ui.label(this,"Place targets inside the green pad, move the controls outside it, then Play. This counts touches received here—not just gestures reported as completed.",13,Ui.MUTED));counter=Ui.label(this,"",22,Ui.CREAM);AutoTapUi.add(root,counter);TextView pad=Ui.label(this,"TAP TEST PAD\nPlace targets here",22,Ui.BG);pad.setGravity(Gravity.CENTER);pad.setBackground(Ui.shape(this,Ui.GREEN,Ui.CREAM,24));pad.setContentDescription("Tap test pad");root.addView(pad,new LinearLayout.LayoutParams(-1,0,1));pad.setOnTouchListener((v,e)->{if(e.getActionMasked()==MotionEvent.ACTION_UP){if(started==0)started=SystemClock.uptimeMillis();taps++;v.performClick();}return true;});AutoTapUi.button(this,root,"Reset measurement",()->{taps=0;started=0;});AutoTapUi.button(this,root,"Back to Auto Tap",this::finish);started=0;}
+ @Override protected void onResume(){super.onResume();if(TapService.instance!=null)TapService.instance.editorOpen=false;handler.post(refresh);}
+ @Override protected void onPause(){handler.removeCallbacksAndMessages(null);if(TapService.instance!=null)TapService.instance.pauseAutoTap("Test screen closed · paused");super.onPause();}
+}

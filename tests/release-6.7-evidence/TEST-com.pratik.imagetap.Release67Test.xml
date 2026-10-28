@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.Release67Test" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T22:25:04" hostname="6c4d16a9a769" time="1.312">
+  <properties/>
+  <testcase name="sixTargetsUseThreeColumnTilesAndKeepActions" classname="com.pratik.imagetap.Release67Test" time="0.609"/>
+  <testcase name="transferPausePreservesManualPause" classname="com.pratik.imagetap.Release67Test" time="0.056"/>
+  <testcase name="launcherPreferenceSwitchesDuringSession" classname="com.pratik.imagetap.Release67Test" time="0.094"/>
+  <testcase name="androidThrottleAdaptsWithoutStopping" classname="com.pratik.imagetap.Release67Test" time="0.024"/>
+  <testcase name="enabledHeadersGlowWithoutReplacingListener" classname="com.pratik.imagetap.Release67Test" time="0.05"/>
+  <testcase name="duplicateSliderIncludes80And100" classname="com.pratik.imagetap.Release67Test" time="0.157"/>
+  <testcase name="pulseSliderReachesOneTenth" classname="com.pratik.imagetap.Release67Test" time="0.267"/>
+  <testcase name="compactLauncherDragsAndStops" classname="com.pratik.imagetap.Release67Test" time="0.053"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

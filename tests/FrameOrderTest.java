@@ -1,0 +1,3 @@
+package com.pratik.imagetap;
+import java.util.*;
+public class FrameOrderTest {public static void main(String[] args){for(int n:new int[]{0,1,51,500})for(int priority:new int[]{-1,0,50,499,999}){int[] order=FrameOrder.all(n,priority);Set<Integer> unique=new HashSet<>();for(int i:order){if(i<0||i>=n)throw new AssertionError();unique.add(i);}if(order.length!=n||unique.size()!=n)throw new AssertionError("Every target must be visited on each frame");if(priority>=0&&priority<n&&order[0]!=priority)throw new AssertionError("Fresh verification must be first");}System.out.println("PASS full-frame ordering: every target, no duplicates, stale-candidate priority, 0/1/51/500 images");}}

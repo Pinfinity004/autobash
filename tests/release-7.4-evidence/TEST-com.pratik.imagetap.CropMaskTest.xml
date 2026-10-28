@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.CropMaskTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-27T21:23:16" hostname="f178b906e8e6" time="0.467">
+  <properties/>
+  <testcase name="freehandLassoIgnoresOutsideShape" classname="com.pratik.imagetap.CropMaskTest" time="0.028"/>
+  <testcase name="quickCaptureHandoffSavesThenReturns" classname="com.pratik.imagetap.CropMaskTest" time="0.352"/>
+  <testcase name="rectangleEraseRestoreUndoAndSavePreserveMask" classname="com.pratik.imagetap.CropMaskTest" time="0.04"/>
+  <testcase name="fiveHundredLimit" classname="com.pratik.imagetap.CropMaskTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

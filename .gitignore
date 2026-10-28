@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+local.properties
+gradle-app.setting
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing material — private keys are never published
+signing/*
+!signing/README.md
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# Build outputs (APKs are attached to GitHub Releases instead)
+*.apk
+*.aab
+*.ap_
+*.dex
+output-metadata.json
+
+# Build and test logs
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local staging: source zips and extracted copies
+_incoming/

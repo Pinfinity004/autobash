@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.AutoTapUi73Test" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-27T17:41:55" hostname="d60ab561ea8b" time="14.127">
+  <properties/>
+  <testcase name="fastestPresetClearsIndividualOverrides" classname="com.pratik.imagetap.AutoTapUi73Test" time="10.281"/>
+  <testcase name="homeAndDrawerExposeDedicatedSection" classname="com.pratik.imagetap.AutoTapUi73Test" time="1.703"/>
+  <testcase name="landscapeKeepsPlayStopAboveScrollableDetails" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.231"/>
+  <testcase name="numberPickerAppliesTwoTargets" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.326"/>
+  <testcase name="layoutsRetainCoordinatesTimingAndNames" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.043"/>
+  <testcase name="settingsChangedDuringPendingTapApplyAfterCompletion" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.293"/>
+  <testcase name="openingAutoTapStopsRecognitionAndOnlyOnePanelExists" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.283"/>
+  <testcase name="fastestUsesOneMillisecondAndRemovesTouchableMarkers" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.179"/>
+  <testcase name="testPadCountsActualReceivedTouches" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.109"/>
+  <testcase name="targetUnderMenuCannotTapControls" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.127"/>
+  <testcase name="recoveryRetainsProgressButAlwaysStartsPaused" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.191"/>
+  <testcase name="stopRemovesControlsAndLateCallbackCannotRestart" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.134"/>
+  <testcase name="numberTwoCreatesTwoIndependentDraggableTargets" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.165"/>
+  <testcase name="invalidAndUnknownLayoutsDoNotSilentlyReplaceSavedData" classname="com.pratik.imagetap.AutoTapUi73Test" time="0.054"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

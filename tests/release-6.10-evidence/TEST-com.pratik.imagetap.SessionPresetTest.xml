@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.SessionPresetTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-27T01:47:44" hostname="1656eaf870b9" time="0.504">
+  <properties/>
+  <testcase name="invalidSaveDoesNotReplaceSlot" classname="com.pratik.imagetap.SessionPresetTest" time="0.032"/>
+  <testcase name="finishingQuickEditorPreservesManualPause" classname="com.pratik.imagetap.SessionPresetTest" time="0.028"/>
+  <testcase name="presetCopiesPreserveOptionsAndIsolateEdits" classname="com.pratik.imagetap.SessionPresetTest" time="0.043"/>
+  <testcase name="presetsDialogRendersThreeSlots" classname="com.pratik.imagetap.SessionPresetTest" time="0.278"/>
+  <testcase name="popupHeightDoesNotFollowStatusAndPauseInvalidates" classname="com.pratik.imagetap.SessionPresetTest" time="0.103"/>
+  <testcase name="manualAndQuickPauseAreIndependent" classname="com.pratik.imagetap.SessionPresetTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

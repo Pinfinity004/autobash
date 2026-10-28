@@ -1,0 +1,17 @@
+* text=auto eol=lf
+*.java text
+*.xml text
+*.gradle text
+*.gradle.kts text
+*.md text
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary
+*.otf binary
+*.jar binary
+*.apk binary
+*.aab binary
+*.jks binary
+*.keystore binary

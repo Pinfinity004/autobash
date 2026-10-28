@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.PresetArchiveTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-27T21:23:23" hostname="f178b906e8e6" time="0.286">
+  <properties/>
+  <testcase name="rejectsPathTraversalWithoutChangingPreset" classname="com.pratik.imagetap.PresetArchiveTest" time="0.036"/>
+  <testcase name="rejectsOversizedCompressedManifest" classname="com.pratik.imagetap.PresetArchiveTest" time="0.03"/>
+  <testcase name="cancelDeletesStagingButKeepsSavedPreset" classname="com.pratik.imagetap.PresetArchiveTest" time="0.036"/>
+  <testcase name="truncatedPngIsRejected" classname="com.pratik.imagetap.PresetArchiveTest" time="0.029"/>
+  <testcase name="invalidOptionsDoNotTouchDestination" classname="com.pratik.imagetap.PresetArchiveTest" time="0.029"/>
+  <testcase name="roundTripPreservesPixelsOptionsAndOtherSlots" classname="com.pratik.imagetap.PresetArchiveTest" time="0.039"/>
+  <testcase name="rejectsInvalidPngMissingAndFutureManifest" classname="com.pratik.imagetap.PresetArchiveTest" time="0.027"/>
+  <testcase name="changedDestinationCannotBeOverwritten" classname="com.pratik.imagetap.PresetArchiveTest" time="0.033"/>
+  <testcase name="emptyPresetIsPortable" classname="com.pratik.imagetap.PresetArchiveTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

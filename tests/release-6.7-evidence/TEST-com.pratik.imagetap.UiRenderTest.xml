@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.UiRenderTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T22:25:07" hostname="6c4d16a9a769" time="2.056">
+  <properties/>
+  <testcase name="pulseFadesAndGuidesCanBeDisabled" classname="com.pratik.imagetap.UiRenderTest" time="0.1"/>
+  <testcase name="compactScreen" classname="com.pratik.imagetap.UiRenderTest" time="0.162"/>
+  <testcase name="renderTabsAndCheckActions" classname="com.pratik.imagetap.UiRenderTest" time="0.735"/>
+  <testcase name="renderFocusAndPulse" classname="com.pratik.imagetap.UiRenderTest" time="0.171"/>
+  <testcase name="renderRegionEditor" classname="com.pratik.imagetap.UiRenderTest" time="0.239"/>
+  <testcase name="renderPopulatedImagesAndCrop" classname="com.pratik.imagetap.UiRenderTest" time="0.32"/>
+  <testcase name="pulseSliderUsesSecondsAndClampsToRange" classname="com.pratik.imagetap.UiRenderTest" time="0.176"/>
+  <testcase name="floatingPanelCollapses" classname="com.pratik.imagetap.UiRenderTest" time="0.153"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

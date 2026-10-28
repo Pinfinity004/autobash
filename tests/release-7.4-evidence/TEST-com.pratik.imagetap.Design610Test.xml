@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.Design610Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-27T21:23:17" hostname="f178b906e8e6" time="1.809">
+  <properties/>
+  <testcase name="stylingPreservesAuthoredMargins" classname="com.pratik.imagetap.Design610Test" time="0.171"/>
+  <testcase name="actionTilesGrowForLargeText" classname="com.pratik.imagetap.Design610Test" time="0.311"/>
+  <testcase name="drawerRoutesToTimelineAndDismisses" classname="com.pratik.imagetap.Design610Test" time="0.426"/>
+  <testcase name="sectionsRememberExpansionAndControlsWork" classname="com.pratik.imagetap.Design610Test" time="0.9"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.ActionReleaseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-27T12:39:11" hostname="fe51d1375462" time="7.391">
+  <properties/>
+  <testcase name="strongestWinsEvenIfLowerMatchWasBeingConfirmed" classname="com.pratik.imagetap.ActionReleaseTest" time="4.782"/>
+  <testcase name="distinctEffectsRenderAndFadeWithoutInterceptingTouches" classname="com.pratik.imagetap.ActionReleaseTest" time="0.595"/>
+  <testcase name="tiesAreStableAndOnlyOneActionRuns" classname="com.pratik.imagetap.ActionReleaseTest" time="0.113"/>
+  <testcase name="actionArchivePreservesActionAndRejectsWrongCollection" classname="com.pratik.imagetap.ActionReleaseTest" time="0.046"/>
+  <testcase name="backAndHomeUseGlobalActionsNotTaps" classname="com.pratik.imagetap.ActionReleaseTest" time="0.106"/>
+  <testcase name="hubOpensEveryActionAndRetainsPresetTools" classname="com.pratik.imagetap.ActionReleaseTest" time="1.155"/>
+  <testcase name="previewAndPauseBlockNavigation" classname="com.pratik.imagetap.ActionReleaseTest" time="0.099"/>
+  <testcase name="centreSwipeUsesImageOnlyAsTrigger" classname="com.pratik.imagetap.ActionReleaseTest" time="0.087"/>
+  <testcase name="rejectedNavigationDoesNotCountOrLatch" classname="com.pratik.imagetap.ActionReleaseTest" time="0.086"/>
+  <testcase name="geometryClampsAndDetectsOverlayIntersections" classname="com.pratik.imagetap.ActionReleaseTest" time="0.025"/>
+  <testcase name="allSwipeDirectionsDispatchRealPaths" classname="com.pratik.imagetap.ActionReleaseTest" time="0.223"/>
+  <testcase name="legacyTapAndOtherActionsKeepIndependentSlots" classname="com.pratik.imagetap.ActionReleaseTest" time="0.037"/>
+  <testcase name="oldSharedPresetsImportAsTap" classname="com.pratik.imagetap.ActionReleaseTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+package com.pratik.imagetap;
+import org.opencv.core.*;import org.opencv.imgcodecs.Imgcodecs;import org.opencv.imgproc.Imgproc;import java.util.*;
+public class RealFixtureAudit{
+ static Mat read(String p){Mat b=Imgcodecs.imread(p,Imgcodecs.IMREAD_UNCHANGED),r=new Mat();Imgproc.cvtColor(b,r,b.channels()==4?Imgproc.COLOR_BGRA2RGBA:Imgproc.COLOR_BGR2RGBA);b.release();return r;}
+ static VisionMatcher.Hit match(Mat s,Mat t,RegionRules.Region a){try(VisionMatcher.Frame f=new VisionMatcher.Frame(s,2000,90,Collections.emptyList())){return VisionMatcher.find(f,t,null,System.nanoTime()+10000000000L,1,a);}}
+ public static void main(String[] args){nu.pattern.OpenCV.loadLocally();Core.setNumThreads(2);String p="audit_fixtures/pack/Skiptap_Targets_Batch_1/";Mat s=read("audit_fixtures/249997.jpg"),t=read(p+"02_Optional_skip_arrows/skip_white_small.png");VisionMatcher.Hit h=match(s,t,null);if(h==null)throw new AssertionError("Expected ambiguous symbol");System.out.println("Open Store unrestricted: "+h.x+","+h.y+" score="+h.score);s=read("audit_fixtures/249997.jpg");h=match(s,t,new RegionRules.Region(.65f,0,1,.35f,75));if(h!=null)throw new AssertionError("Outside-zone symbol matched");System.out.println("Open Store with top-right-only search: REJECTED");s=read("audit_fixtures/249984.jpg");t=read(p+"01_Close_buttons/close_white_small.png");h=match(s,t,new RegionRules.Region(.65f,0,1,.35f,75));if(h==null)throw new AssertionError("Close missed");System.out.println("Real close button: "+h.x+","+h.y+" score="+h.score);}
+}

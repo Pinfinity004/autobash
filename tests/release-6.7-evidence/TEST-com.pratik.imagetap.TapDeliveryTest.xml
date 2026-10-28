@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.TapDeliveryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T22:25:06" hostname="6c4d16a9a769" time="0.668">
+  <properties/>
+  <testcase name="alreadyTappedTargetDoesNotResetAnotherConfirmation" classname="com.pratik.imagetap.TapDeliveryTest" time="0.158"/>
+  <testcase name="onlyOneAcceptedGesturePerFrame" classname="com.pratik.imagetap.TapDeliveryTest" time="0.075"/>
+  <testcase name="previewAndStaleFramesNeverDispatch" classname="com.pratik.imagetap.TapDeliveryTest" time="0.086"/>
+  <testcase name="detectionDispatches100msAndCompletionReportsAndroidOnly" classname="com.pratik.imagetap.TapDeliveryTest" time="0.064"/>
+  <testcase name="cancelledAndRejectedGesturesCanRetry" classname="com.pratik.imagetap.TapDeliveryTest" time="0.062"/>
+  <testcase name="sameFrameCannotConfirmItself" classname="com.pratik.imagetap.TapDeliveryTest" time="0.054"/>
+  <testcase name="durationClampsAndExceptionsDoNotLatchPending" classname="com.pratik.imagetap.TapDeliveryTest" time="0.057"/>
+  <testcase name="pauseInvalidatesLateGestureCompletion" classname="com.pratik.imagetap.TapDeliveryTest" time="0.06"/>
+  <testcase name="competingTargetsConfirmIndependentlyAcrossDistinctFrames" classname="com.pratik.imagetap.TapDeliveryTest" time="0.05"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

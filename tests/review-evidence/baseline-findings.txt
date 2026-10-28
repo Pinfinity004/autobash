@@ -1,0 +1,2 @@
+Budget-limited priority scan: 1 of 20 targets examined after 200 pulses; expected 20.
+Known 2x screenshot resolution change: MISSED

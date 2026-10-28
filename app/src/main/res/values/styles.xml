@@ -1,0 +1,7 @@
+<resources>
+<style name="BaseAppTheme" parent="android:style/Theme.Material.NoActionBar">
+<item name="android:fontFamily">@font/manrope</item><item name="android:windowBackground">#0C1424</item><item name="android:colorBackground">#0C1424</item><item name="android:colorAccent">#F1E5CA</item><item name="android:colorControlActivated">#F1E5CA</item><item name="android:colorButtonNormal">#1C2B42</item><item name="android:textColorPrimary">#F1E5CA</item><item name="android:textColorSecondary">#A5B0BF</item><item name="android:statusBarColor">#0C1424</item><item name="android:navigationBarColor">#0C1424</item><item name="android:windowLightStatusBar">false</item><item name="android:windowLightNavigationBar">false</item><item name="android:alertDialogTheme">@style/DialogTheme</item>
+</style>
+<style name="AppTheme" parent="BaseAppTheme"/>
+<style name="DialogTheme" parent="android:style/Theme.Material.Dialog.Alert"><item name="android:fontFamily">@font/manrope</item><item name="android:colorAccent">#F1E5CA</item><item name="android:colorBackground">#121F33</item><item name="android:textColorPrimary">#F1E5CA</item><item name="android:textColorSecondary">#A5B0BF</item><item name="android:windowBackground">@drawable/dialog_surface</item></style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.PresetTransferUiTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-27T17:42:24" hostname="d60ab561ea8b" time="0.542">
+  <properties/>
+  <testcase name="exportUsesSystemCreateDocument" classname="com.pratik.imagetap.PresetTransferUiTest" time="0.121"/>
+  <testcase name="importUsesSystemOpenDocumentAndShowsThreeSlots" classname="com.pratik.imagetap.PresetTransferUiTest" time="0.421"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

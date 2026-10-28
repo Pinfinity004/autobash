@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pratik.imagetap.TargetOrder71Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-27T21:23:29" hostname="f178b906e8e6" time="0.524">
+  <properties/>
+  <testcase name="crossPagePositionControlMovesImage39ToFirst" classname="com.pratik.imagetap.TargetOrder71Test" time="0.257"/>
+  <testcase name="staleMoveCannotOverwriteSavedOrder" classname="com.pratik.imagetap.TargetOrder71Test" time="0.039"/>
+  <testcase name="copiesAndExportsInDisplayOrderAndIsolatesSlotsAndActions" classname="com.pratik.imagetap.TargetOrder71Test" time="0.103"/>
+  <testcase name="droppingLastTileOnFirstMovesAndCancelledDragDoesNot" classname="com.pratik.imagetap.TargetOrder71Test" time="0.084"/>
+  <testcase name="movesBothDirectionsWithoutChangingIdentityAndAppendsNewImages" classname="com.pratik.imagetap.TargetOrder71Test" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+]]></system-err>
+</testsuite>

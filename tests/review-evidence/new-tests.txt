@@ -1,0 +1,13 @@
+PASS: crop coordinate mapping, focus zoom, pan limits, 48x limit, fit reset
+PASS: 500-target coverage, confirmation priority, fairness, unique batches, empty/single target
+PASS: 75–100 accuracy, 0–5000ms delay, first-tap/zero-delay behavior, no overlap, capture pacing, bounded retries
+PASS regions: independent accuracy, fallback, overlap, exclusion priority, screen-relative positions
+PASS duplicate matching: exact/99% modes, unrelated/aspect rejection, complete-link grouping without transitive overmerge
+PASS merge storage: selected copy retained, recoverable backups, exact undo, no overwrite on restore conflicts
+Scene 0: 100,180 24x24 score 100.0
+Scene 1: 100,180 24x24 score 100.0
+Scene 2: 100,180 24x24 score 100.0
+Calibrated regional 2x match ms=11
+PASS native vision: exact, brightness, scale, background and text distractors, excluded overlap, regional thresholds, alpha icons, full-resolution refinement, still screens, masked changing backgrounds, 8x8 target, masked exact mode
+PASS priority+budget coverage: 20/20
+PASS capture ownership and screenshot-age boundaries
