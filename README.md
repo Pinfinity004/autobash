@@ -1,101 +1,178 @@
-# AutoBash 7.4
+<div align="center">
+<pre>
+                █████████████████████  █████████████████████
+              ███▀                  █  █                   ███▄
+             ██           ▒▒      ▒▒█  █      ▒▒      ▒▒▒    ██
+            ▄█   ▒▒▒▒▒▒▒▒▒▒▒▒▒      █▒▒█▒▒▒▒▒▒▒▒▒▒        ▒▒▒ █▄
+           ███      ▒▒▒        ▒▒▒  █  █▒▒▒        ▒▒▒        ███
+           █   ▒▒▒▒▒▒   ▒▒▒        ▒█▒▒█▒   ▒▒▒         ▒▒▒▒▒   █▄
+           ██  ▒             ▒▒▒  ▒▒█▒ █         ▒▒▒  ▒▒▒▒     ██
+           ▀███                     ████                     ███▀
+             ▀█████▄             ███    ███▄             █████▀
+                  ████████████████ ██████ ████████████████
+                        ▀▀▀▀       ▀▀▀▀▀▀       ▀▀▀▀
+</pre>
+</div>
 
-On-device screen recognition and input automation for Android. Save a crop of any UI
-element as a **target**; AutoBash watches the screen through an `AccessibilityService`,
-finds that element with OpenCV template matching, and performs the action you assigned —
-tap, swipe, back or home — at the match location.
+<h1 align="center">AUTOBASH</h1>
 
-Grew out of an earlier prototype called ImageTap, then Skiptap. This repository is the
-source of release **7.4**.
+<p align="center"><b>It sees the button. It presses it.</b></p>
 
-> **Not for Google Play.** AutoBash injects input via `AccessibilityService`. Play policy
-> disallows accessibility-based automation, so this app is for personal use and sideloading.
-> It will not pass Play review, and targets it is well suited to (ad "skip"/"close" buttons)
-> are covered by ad-network terms of service. The app requires no `INTERNET` permission —
-> the manifest removes it explicitly — and processes everything on-device.
+<p align="center">
+Show AutoBash an image — a skip button, a close cross, a play control, a stubborn
+dialog — and it finds that exact thing on your screen, then acts on it. Tap. Swipe.
+Back. Home.
+</p>
 
-## Features
+<p align="center">
+On-device. No account. No cloud. <b>No internet permission at all.</b>
+</p>
 
-- **Targets** — crop from a screenshot or import an image; up to 100 saved, shown in a
-  reorderable grid.
-- **Recognition** — OpenCV template matching with multi-scale search, per-region accuracy
-  thresholds, transparent-pixel masking, and a confirmation step before a tap fires.
-- **Scan engine** — parallel recognition (`ScanEngine`) with Balanced/Fast modes, worker
-  caches, recent-location hints, and fair rotating/interleaved scheduling so targets at the
-  end of a preset are not starved.
-- **Actions** — tap, swipe in four directions, back, home, plus a **pointer marker** to fire
-  a tap or swipe on an interval with no detection at all.
-- **Auto Tap** — 1–20 movable numbered targets on a timer, with play/pause and saved layouts.
-- **Sessions** — start/pause/resume, quick save, checkpoint and recovery that preserves
-  action count and timed-plan progress across process death.
-- **UI** — cream/navy theme, neural-brain logo, pulsing nerve background, and floating
-  controls resizable from 75 % to 150 % independently for simple and advanced popups.
+<p align="center">
+<img alt="version" src="https://img.shields.io/badge/version-7.4-FFD166?style=flat-square">
+<img alt="android" src="https://img.shields.io/badge/Android-11%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
+<img alt="java" src="https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+<img alt="opencv" src="https://img.shields.io/badge/OpenCV-4.12.0-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
+<img alt="tests" src="https://img.shields.io/badge/tests-155%20passing-2ea44f?style=flat-square">
+<img alt="network" src="https://img.shields.io/badge/network-none-critical?style=flat-square">
+<img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
+</p>
+
+<p align="center">
+<img src="docs/media/auto-tap.png" width="300" alt="AutoBash Auto Tap screen">
+</p>
+
+---
+
+## The idea
+
+Most auto-clickers are blind. They tap coordinates in a loop and hope the world has not
+moved. AutoBash is the other thing: it **looks** first.
+
+You crop the thing you want — a tiny 40-pixel skip arrow, a grey close cross, a specific
+game tile — straight out of a screenshot. AutoBash keeps that as a *target*. Then it
+watches the live screen through Android's `AccessibilityService`, hunts for your target
+with OpenCV template matching, and presses it the moment it appears.
+
+Size changes. Backgrounds change. The ad network ships a new layout. AutoBash searches
+across scales, masks out the background noise you cropped by accident, and scores every
+candidate before anything is touched.
+
+## What makes it not-just-another-clicker
+
+| | |
+|---|---|
+| 🧠 **Real matching, not coordinates** | Multi-scale template search, transparent-pixel masking, per-region accuracy thresholds, and a confidence score before any tap fires. |
+| 🎯 **Five actions, not one** | Tap, swipe left/right/up/down, back, home. A quick-save menu asks which one you meant. |
+| 👀 **Look twice** | Optional two-frame confirmation: the same target must appear in a second capture before AutoBash commits. Stale frames never trigger a tap. |
+| ⚡ **Parallel eyes** | The scan engine checks targets concurrently with Balanced/Fast modes and worker caches — a 51-target pass went from **4443 ms to 1625 ms** on the tiny-symbol benchmark. |
+| 🔄 **Nothing gets starved** | Fair rotating target order, so target #51 is not permanently checked last. |
+| 💾 **Survives death** | Session checkpoints keep your action count, timed-plan progress and floating controls across a process kill. |
+| 🤖 **Auto Tap** | Up to 20 numbered targets on a timer with play/pause, saved layouts and an on-device tap test — no image detection at all. |
+| 🎨 **Actually designed** | Cream-and-navy, a hand-drawn circuit brain, pulsing nerve background, resizable floating controls. |
+
+## How it works
+
+```
+   ┌──────────────┐    ┌───────────────┐    ┌──────────────┐    ┌────────────┐
+   │  CAPTURE     │───▶│   PROPOSE     │───▶│   VERIFY     │───▶│    ACT     │
+   │  screenshot  │    │  fast candidate│    │ full-res match│    │ gesture    │
+   │  + timestamp │    │  search @ 720px│    │ + mask + score│    │ dispatch   │
+   └──────────────┘    └───────────────┘    └──────────────┘    └────────────┘
+          │                                          │                 │
+          └── fresh? (≤2s) ─────────────────────────┘── ≥ threshold? ──┘
+```
+
+Every screenshot carries Android's own `uptimeMillis` timestamp. If a scan took too long,
+its result is treated as **stale** and not allowed to authorise a tap — a matched but old
+position is a wrong tap, and wrong taps are worse than no taps.
+
+## Screens
+
+<p align="center">
+<img src="docs/media/auto-tap-controls.png" width="230" alt="Auto Tap floating controls">
+&nbsp;&nbsp;
+<img src="docs/media/auto-tap-landscape.png" width="360" alt="Auto Tap in landscape">
+</p>
+
+## Install
+
+Grab the APK from **[Releases](https://github.com/Pinfinity004/autobash/releases)**.
+
+1. Install `AutoBash_7.4.apk` (allow install from unknown sources).
+2. Open AutoBash → **Settings → Accessibility** → enable **AutoBash recognition**.
+3. Add a target: screenshot → crop the thing you want → confirm.
+4. Start a session. **Leave Tap on detection off for the first minute** and just watch the
+   green candidate brackets to check it is looking at the right thing.
+
+Requires Android 11+ (API 30), `arm64-v8a`.
+
+> ⚠️ **This is the debug build and it is not on Google Play.** It ships debuggable, and Play
+> policy forbids accessibility-based automation anyway. Sideload it, use it on your own
+> device, and understand what it does before you trust it unattended.
 
 ## Build
 
-Requirements: **JDK 17**, Android SDK **platform 35** and **build-tools 35.0.0**.
+**JDK 17**, Android SDK **platform 35**, **build-tools 35.0.0**.
 
 ```bash
+git clone https://github.com/Pinfinity004/autobash.git
+cd autobash
 ./gradlew assembleDebug
 ```
 
-The debug build is signed with a local development key; see [`signing/README.md`](signing/README.md)
-for how that is wired up and how to supply your own. Release APKs are attached to GitHub
-Releases rather than committed here.
+The debug variant is signed with a local development key — see
+[`signing/README.md`](signing/README.md) to supply your own. Release APKs belong in
+Releases, not in the tree.
 
-## Project facts
+## Under the hood
 
 | | |
 |---|---|
 | `applicationId` | `com.pratik.imagetap.v7` |
 | `namespace` | `com.pratik.imagetap` |
 | Version | `7.4` (code `24`) |
-| minSdk / targetSdk / compileSdk | 30 / 35 / 35 |
-| Language | Java 17 |
+| minSdk / target / compile | 30 / 35 / 35 |
 | Android Gradle Plugin | 8.9.2 |
 | Vision | `org.opencv:opencv:4.12.0` |
-| Tests | 155 passing, as reported for this release |
-
-`applicationId` deliberately differs from `namespace`, which is why this build installs
-alongside earlier versions instead of replacing them.
-
-## Layout
+| Tests | 155 passing |
 
 ```
 app/src/main/java/com/pratik/imagetap/
-  MainActivity.java        dashboard, session controls, settings
-  TapService.java          AccessibilityService: capture -> match -> gesture
-  VisionMatcher.java       template matching, scaling, evidence scoring
+  MainActivity.java        dashboard, session control, settings
+  TapService.java          AccessibilityService: capture → match → gesture
+  VisionMatcher.java       template matching, multi-scale, masking, scoring
   ScanEngine.java          parallel scan scheduling
   FrameOrder.java          fair rotating target order
   TargetOrder.java         persistent drag-to-reorder grid order
   SessionCheckpoint.java   crash-safe session state
   AutoTap*.java            timed tap/swipe runner, store, overlay, UI
-  Brain*.java, Nerve*.java brand artwork and animated background
-  Ui.java, TargetGrid.java, PresetEditor.java, Region*.java, PopupSize.java
-app/src/test/              Robolectric and JVM unit tests
-tests/                     standalone pure-Java and native benchmark harnesses
+  Brain*.java, Nerve*.java brand artwork and the animated background
 ```
 
 ## Documentation
 
 | | |
 |---|---|
-| [`docs/CHANGELOG.md`](docs/CHANGELOG.md) | Version-by-version history, 0.x → 7.4 |
-| [`docs/HISTORY.md`](docs/HISTORY.md) | The original release index, newest first |
-| [`AUTOBASH_7.4.md`](AUTOBASH_7.4.md) | Current release notes; earlier versions sit beside it |
+| [`docs/CHANGELOG.md`](docs/CHANGELOG.md) | Version history, 0.x → 7.4 |
+| [`docs/HISTORY.md`](docs/HISTORY.md) | Original release index |
+| [`AUTOBASH_7.4.md`](AUTOBASH_7.4.md) | Current release notes |
 | [`VALIDATION.md`](VALIDATION.md) | Test and lint results per release |
-| [`REVIEW.md`](REVIEW.md) | Independent review notes |
+| [`REVIEW.md`](REVIEW.md) | A candid review of what works and what does not |
 | [`docs/RECOVERY_STATUS.md`](docs/RECOVERY_STATUS.md) | Provenance of this source tree |
 
-## Status and limits
+## Honest limits
 
-Automated suite: 155 tests passing, build and lint clean. **No physical-device test was
-performed**, and the release notes say so plainly. On-device behaviour — accessibility
-permission grants, file-provider access for importing images, capture timing on real
-hardware, and OEM-specific battery restrictions — should be verified on your own phone
-before relying on it.
+- **No device testing was performed.** All 155 tests are automated (Robolectric + JVM +
+  native OpenCV). Real phones behave differently: OEM battery managers kill accessibility
+  services, secure windows refuse screenshots, and gesture delivery is not guaranteed.
+- **A match is not an intention.** Finding a shape that looks like a skip button does not
+  prove it skips anything. Constrain each target to a region and check in preview mode.
+- **Small, low-contrast, rotated or animated targets are hard** for template matching.
+  It is not a neural network and does not generalise to unseen designs.
+- **Accessibility automation is a policy minefield.** Not for Play Store distribution, and
+  the ad-skip use case sits against more than one ad network's terms.
 
 ## License
 
-See [`LICENSE`](LICENSE).
+MIT — see [`LICENSE`](LICENSE).
