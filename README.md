@@ -1,42 +1,8 @@
 <div align="center">
-<pre>
-                        ~~~~~~            ~~~~~~
-                /-------      \          \      -------/
-            /---               \        \               ---/
-          /-                    \      \                    -/
-         /                /----●\      \●----/                /
-        /         ●      /       \    \       /      ●         /
-      /-          |     /        |    |        /     |          -/
-   /--            |    /    /--● \    \ ●--/    /    |            --/
-  /          ●----|----    /      \  \      /    ----|----●          /
-  \               |       /       |  |       /       |               \
-   \              |/------        |  |        ------/|              \
-   |              ●        /---●  |  |  ●---/        ●              |
-   /             /        /       |  |       /        /             /
-  /             /        /        |  |        /        /             /
- /      ●-------     ●---         |  |         ---●     -------●      /
- |                        /----●  |  |  ●----/                        |
- \                       /        |  |        /                       \
-  \           ●         ●         |  |         ●         ●           \
-   \          |        /|         |  |         |/        |          \
-   /       ●--|-------- |    /-●  |  |  ●-/    | --------|--●       /
-  /           |         ●   /     |  |     /   ●         |           /
- /            |            /      |  |      /            |            /
- \            ●  /---------       |  |       ---------/  ●            \
-  \             /           /--●  /  /  ●--/           /             \
-   -\          /           /     /    /     /           /          \-
-     -\  ●-----           /      |    |      /           -----●  \-
-       -\             ●---       /    /       ---●             \-
-        \                 ●---● /      / ●---●                 \
-         \                      /      /                      \
-          --\                  /        /                  \--
-             ---\             /          /             \---
-                        ______            ______
-                                  |  |
-</pre>
+<a href="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/logo-banner.png">
+<img src="https://raw.githubusercontent.com/Pinfinity004/autobash/main/docs/media/logo-banner.png" width="620" alt="AutoBash — circuit-brain logo">
+</a>
 </div>
-
-<h1 align="center">AUTOBASH</h1>
 
 <p align="center"><b>It sees the button. It presses it.</b></p>
 
